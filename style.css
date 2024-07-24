@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 2.5em;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.operation {
+    background-color: #ff9500;
+    color: white;
+}
+
+.operation:hover {
+    background-color: #e08900;
+}
+
+.equal {
+    background-color: #4caf50;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #45a049;
+}
+
+.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #d32f2f;
+}
+
+.history {
+    width: 30%;
+    max-width: 300px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.history h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    max-height: 600px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.history li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.history li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 900px) {
+    .calculator-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .display {
+        font-size: 2em;
+        padding: 0 10px;
+    }
+    
+    .btn {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    .buttons {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .calculator {
+        max-width: 100%;
+    }
+}
