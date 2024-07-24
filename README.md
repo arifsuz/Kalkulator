@@ -24,7 +24,7 @@ I made this calculator program to fulfill the UAS assignment for the Web Program
 
 ## Demo
 
-You can view a live demo of the calculator [here](https://your-demo-link.com).
+You can view a live demo of the calculator [here](https://arifsuz-kalkulator.vercel.app).
 
 ## Installation
 
