@@ -9,6 +9,7 @@ I made this calculator program to fulfill the UAS assignment for the Web Program
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
+- [Authors](#authors)
 - [License](#license)
 
 ## Features
